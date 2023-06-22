@@ -1,9 +1,9 @@
 object fobat: Tfobat
-  Left = 185
-  Top = 118
-  Width = 729
-  Height = 449
-  Caption = 'APOTIK ANNMUNN'
+  Left = 331
+  Top = 238
+  Width = 1037
+  Height = 541
+  Caption = 'APOTEK MUNN'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,8 +18,8 @@ object fobat: Tfobat
   object Image1: TImage
     Left = 0
     Top = 0
-    Width = 713
-    Height = 410
+    Width = 1021
+    Height = 502
     Align = alClient
     Picture.Data = {
       0A544A504547496D6167657A160000FFD8FFE000104A46494600010100000100
@@ -206,7 +206,7 @@ object fobat: Tfobat
     Stretch = True
   end
   object Label1: TLabel
-    Left = 256
+    Left = 448
     Top = 16
     Width = 227
     Height = 30
@@ -217,6 +217,7 @@ object fobat: Tfobat
     Font.Name = 'Segoe UI Semibold'
     Font.Style = [fsBold]
     ParentFont = False
+    Transparent = True
   end
   object Label2: TLabel
     Left = 48
@@ -224,12 +225,15 @@ object fobat: Tfobat
     Width = 45
     Height = 17
     Caption = 'ID Obat'
+    Color = clBtnFace
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
     Font.Name = 'Segoe UI'
     Font.Style = []
+    ParentColor = False
     ParentFont = False
+    Transparent = True
   end
   object Label3: TLabel
     Left = 48
@@ -243,6 +247,7 @@ object fobat: Tfobat
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
+    Transparent = True
   end
   object Label4: TLabel
     Left = 48
@@ -256,6 +261,7 @@ object fobat: Tfobat
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
+    Transparent = True
   end
   object Label5: TLabel
     Left = 48
@@ -269,6 +275,7 @@ object fobat: Tfobat
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
+    Transparent = True
   end
   object Label6: TLabel
     Left = 48
@@ -282,6 +289,7 @@ object fobat: Tfobat
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
+    Transparent = True
   end
   object Label7: TLabel
     Left = 48
@@ -295,6 +303,7 @@ object fobat: Tfobat
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
+    Transparent = True
   end
   object Label8: TLabel
     Left = 48
@@ -308,6 +317,7 @@ object fobat: Tfobat
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
+    Transparent = True
   end
   object eid_obat: TEdit
     Left = 160
@@ -370,7 +380,7 @@ object fobat: Tfobat
   object DBGrid1: TDBGrid
     Left = 304
     Top = 72
-    Width = 369
+    Width = 673
     Height = 225
     DataSource = DataSource1
     ReadOnly = True
@@ -403,7 +413,7 @@ object fobat: Tfobat
     OnClick = bsimpanClick
   end
   object bedit: TButton
-    Left = 192
+    Left = 264
     Top = 320
     Width = 65
     Height = 25
@@ -412,7 +422,7 @@ object fobat: Tfobat
     OnClick = beditClick
   end
   object bbatal: TButton
-    Left = 264
+    Left = 336
     Top = 320
     Width = 65
     Height = 25
@@ -421,7 +431,7 @@ object fobat: Tfobat
     OnClick = bbatalClick
   end
   object bhapus: TButton
-    Left = 336
+    Left = 408
     Top = 320
     Width = 65
     Height = 25
@@ -430,7 +440,7 @@ object fobat: Tfobat
     OnClick = bhapusClick
   end
   object bkeluar: TButton
-    Left = 408
+    Left = 480
     Top = 320
     Width = 65
     Height = 25
@@ -438,19 +448,27 @@ object fobat: Tfobat
     TabOrder = 13
     OnClick = bkeluarClick
   end
+  object Button1: TButton
+    Left = 192
+    Top = 320
+    Width = 65
+    Height = 25
+    Caption = 'Cetak'
+    TabOrder = 14
+  end
   object ADOConnection1: TADOConnection
     Connected = True
     ConnectionString = 
-      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=D:\Il' +
-      'mu\Kuliah\Semester 1\Dasar Pemrograman\Tugas\Tugas UAS Apotek\db' +
-      '.mdb;Mode=Share Deny None;Persist Security Info=False;Jet OLEDB:' +
-      'System database="";Jet OLEDB:Registry Path="";Jet OLEDB:Database' +
-      ' Password="";Jet OLEDB:Engine Type=5;Jet OLEDB:Database Locking ' +
-      'Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk' +
-      ' Transactions=1;Jet OLEDB:New Database Password="";Jet OLEDB:Cre' +
-      'ate System Database=False;Jet OLEDB:Encrypt Database=False;Jet O' +
-      'LEDB:Don'#39't Copy Locale on Compact=False;Jet OLEDB:Compact Withou' +
-      't Replica Repair=False;Jet OLEDB:SFP=False'
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Science\Pendidik' +
+      'an\Kuliah\Semester 6\Pemrograman Visual\Praktikum\Tugas Akhir\Ap' +
+      'likasi Apotik\db.mdb;Mode=Share Deny None;Persist Security Info=' +
+      'False;Jet OLEDB:System database="";Jet OLEDB:Registry Path="";Je' +
+      't OLEDB:Database Password="";Jet OLEDB:Engine Type=5;Jet OLEDB:D' +
+      'atabase Locking Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet O' +
+      'LEDB:Global Bulk Transactions=1;Jet OLEDB:New Database Password=' +
+      '"";Jet OLEDB:Create System Database=False;Jet OLEDB:Encrypt Data' +
+      'base=False;Jet OLEDB:Don'#39't Copy Locale on Compact=False;Jet OLED' +
+      'B:Compact Without Replica Repair=False;Jet OLEDB:SFP=False'
     LoginPrompt = False
     Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'

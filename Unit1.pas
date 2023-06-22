@@ -34,6 +34,7 @@ type
     ADOConnection1: TADOConnection;
     ADOQuery1: TADOQuery;
     DataSource1: TDataSource;
+    bcetak: TButton;
     procedure kosongkan; //tambahkan beberapa procedure berikut
     procedure bacasaja;
     procedure bacatulis;
@@ -55,6 +56,7 @@ type
       Shift: TShiftState);
     procedure eharga_obatKeyPress(Sender: TObject; var Key: Char);
     procedure estok_obatKeyPress(Sender: TObject; var Key: Char);
+    procedure bcetakClick(Sender: TObject);
     
   private
     { Private declarations }
@@ -66,7 +68,7 @@ var
   fobat: Tfobat;
 
 implementation
-
+uses Unit2, Unit3;
 {$R *.dfm}
 
 procedure tfobat.kosongkan; //berfungsi untuk mengosongkan form agar siap diisi data
@@ -313,6 +315,11 @@ procedure Tfobat.estok_obatKeyPress(Sender: TObject; var Key: Char);
 begin
 if not (Key in['0'..'9',#8]) then //agar stok obat hanya bisa diisi dengan angka
 Key:=#0;
+end;
+
+procedure Tfobat.bcetakClick(Sender: TObject);
+begin
+Flapobat.QRLapobat.Preview;
 end;
 
 end.

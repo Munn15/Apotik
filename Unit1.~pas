@@ -34,6 +34,7 @@ type
     ADOConnection1: TADOConnection;
     ADOQuery1: TADOQuery;
     DataSource1: TDataSource;
+    Button1: TButton;
     procedure kosongkan; //tambahkan beberapa procedure berikut
     procedure bacasaja;
     procedure bacatulis;
@@ -66,7 +67,7 @@ var
   fobat: Tfobat;
 
 implementation
-
+uses Unit2;
 {$R *.dfm}
 
 procedure tfobat.kosongkan; //berfungsi untuk mengosongkan form agar siap diisi data
